@@ -101,7 +101,7 @@ def test_weight_if_boat_broken():
     assert boat.current_weight == 0
 
 
-@pytest.mark.parametrize('weight,result_y', [(125, 3.75), (100, 5), (150, 2.5)])
+@pytest.mark.parametrize('weight,result_y', [(125, 3.75), (100, 5), (150, 2.5),(1000,0)])
 def test_weight_modifier(weight, result_y):
     boat = Boat()
     boat.add_weight(weight)
